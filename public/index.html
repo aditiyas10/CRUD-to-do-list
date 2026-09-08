@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-zinc-500">
+    <h1 class="my-10 text-center text-3xl font-bold">Todo List</h1>
+    <main class="w-fulls flex justify-center">
+      <div class="contianer h-96 w-74 rounded-sm bg-white p-2 shadow-xl">
+        <form class="form mb-2 flex gap-2">
+          <input
+            type="text"
+            name="judulTugas"
+            id="judulTugas"
+            placeholder="masukan judul tugas..."
+            class="rounded-sm border-2 bg-white px-2 focus:outline-zinc-500"
+          />
+          <button
+            type="submit"
+            class="cursor-pointer rounded-sm bg-zinc-500 px-2 py-1 text-white hover:bg-zinc-600 focus:bg-zinc-700"
+          >
+            Tambah
+          </button>
+        </form>
+
+        <div class="daftarTugas">
+          <!-- <div
+            class="group tugas-wrapper flex justify-between border-b border-gray-300 px-1 py-1"
+          >
+            <label
+              class="cursor-pointer group-has-checked:text-zinc-400 group-has-checked:line-through"
+            >
+              <input
+                type="checkbox"
+                name="tugas"
+                class="task-checkbox mr-2 scale-130 accent-zinc-500"
+              />
+              create a project with express and mongodb
+            </label>
+
+            <button
+              class="close cursor-pointer justify-end text-red-500 transition group-has-checked:hidden hover:scale-150"
+            >
+              x
+            </button>
+          </div> -->
+
+          <div
+            class="empty-state mt-30 hidden w-full flex-col items-center justify-center text-zinc-400"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-alert-triangle"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 9v4" />
+              <path
+                d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0"
+              />
+              <path d="M12 16h.01" />
+            </svg>
+            <p>Belum ada tugas</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
