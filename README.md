@@ -47,8 +47,9 @@ todo-list/
 │   │       ├── api.js
 │   │       ├── handler.js
 │   │       └── ui.js
-│   └── ...
-│
+│   └── css/
+|        ├── input.css
+│        └── output.css
 ├── config/
 │   └── db.js
 │
